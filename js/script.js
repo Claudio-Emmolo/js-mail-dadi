@@ -50,8 +50,18 @@ let emailUser;
 
 const sendEmail = document.getElementById("send");
 
-sendEmail.addEventListener ("click", function(){
 
+sendEmail.addEventListener ("click", function(){
+    
     emailUser = document.getElementById("email-user").value;
     
+    //Scrollo tutte le email dell'Arrey e controllo se quella del mio utente è presente
+    for ( let i = 0 ; i < emailList.length; i++){
+    
+    if (emailUser === emailList[i]){
+        alert("Email inviata correttamente!")
+    } else {
+
+    }
+}
 });
