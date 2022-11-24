@@ -1,6 +1,9 @@
+//Definisco gli Array
+
+
+//Definisco le variabili
 const startGame = document.getElementById("btn-start");
 
-//Definisco gli Array
 let numberPlayerElement;
 
 let numberComputerElement;
