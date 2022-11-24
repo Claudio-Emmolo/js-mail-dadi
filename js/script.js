@@ -50,6 +50,7 @@ let emailUser;
 
 const sendEmail = document.getElementById("send");
 
+let emailStatus;
 
 sendEmail.addEventListener ("click", function(){
     
@@ -59,9 +60,15 @@ sendEmail.addEventListener ("click", function(){
     for ( let i = 0 ; i < emailList.length; i++){
     
     if (emailUser === emailList[i]){
-        alert("Email inviata correttamente!")
+        emailStatus = true;
     } else {
-
+        emailStatus = false;
     }
-}
+    }
+
+    if (emailStatus == true){
+        alert("Email inviata correttamente!");
+    } else {
+        alert("Email errata!");
+    }
 });
