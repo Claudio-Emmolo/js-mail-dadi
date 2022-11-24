@@ -42,7 +42,7 @@ startGame.addEventListener ("click", function(){
 });
 
 
-//Email
+//---------Email---------//
 
 
 //Variabili
@@ -50,23 +50,22 @@ let emailUser;
 
 const sendEmail = document.getElementById("send");
 
-let emailStatus;
 
 sendEmail.addEventListener ("click", function(){
-    
+
     emailUser = document.getElementById("email-user").value;
+
+    let emailStatus = false;
     
     //Scrollo tutte le email dell'Arrey e controllo se quella del mio utente è presente
     for ( let i = 0 ; i < emailList.length; i++){
     
-    if (emailUser === emailList[i]){
-        emailStatus = true;
-    } else {
-        emailStatus = false;
-    }
+        if (emailUser == emailList[i]){
+            emailStatus = true;
+        }
     }
 
-    if (emailStatus == true){
+    if (emailStatus){
         alert("Email inviata correttamente!");
     } else {
         alert("Email errata!");
