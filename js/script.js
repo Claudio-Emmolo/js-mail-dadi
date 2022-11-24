@@ -1,11 +1,17 @@
 const startGame = document.getElementById("btn-start");
 
 //Definisco gli Array
-let numberPlayerElement = Math.floor(Math.random() * 6) + 1;
+let numberPlayerElement;
 
-let numberComputerElement = Math.floor(Math.random() * 6) + 1;
+let numberComputerElement;
 
-console.log(numberPlayerElement);
-console.log(numberComputerElement);
+//Start Game
+startGame.addEventListener ("click", function(){
+    numberPlayerElement = Math.floor(Math.random() * 6) + 1;
+    numberComputerElement = Math.floor(Math.random() * 6) + 1;
+
+    console.log(numberPlayerElement);
+    console.log(numberComputerElement);
+});
     
 
