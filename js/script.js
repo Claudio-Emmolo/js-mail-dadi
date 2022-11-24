@@ -12,13 +12,13 @@ startGame.addEventListener ("click", function(){
 
     console.log(numberPlayerElement);
     console.log(numberComputerElement);
-    
+
     if (numberPlayerElement > numberComputerElement){
         console.log ("Hai vinto!");
-    } else if (!(numberPlayerElement > numberComputerElement)){
+    } else if ((numberPlayerElement < numberComputerElement)){
         console.log ("Hai perso");
-    } else if (numberPlayerElement === numberComputerElement){
-        console.log("Pereggio")
+    } else if (numberPlayerElement == numberComputerElement){
+        console.log("Pareggio")
     }
 
 });
