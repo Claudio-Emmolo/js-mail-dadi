@@ -23,6 +23,7 @@ let numberPlayerElement;
 
 let numberComputerElement;
 
+
 //Start Game
 startGame.addEventListener ("click", function(){
     numberPlayerElement = Math.floor(Math.random() * 6) + 1;
@@ -43,3 +44,14 @@ startGame.addEventListener ("click", function(){
 
 //Email
 
+
+//Variabili
+let emailUser;
+
+const sendEmail = document.getElementById("send");
+
+sendEmail.addEventListener ("click", function(){
+
+    emailUser = document.getElementById("email-user").value;
+    
+});
